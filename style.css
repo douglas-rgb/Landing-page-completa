@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+  transition: all 0.5s ease;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  background: #000;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.header-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 1.3rem 5rem;
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.navbar-top a {
+  color: #fff;
+  font-weight: 300;
+  margin-right: 2rem;
+  font-size: 1rem;
+}
+
+.navbar-top a:hover {
+  font-weight: 600;
+  padding: 0 0.8rem;
+  color: #fff;
+}
+
+.sociais-icon i {
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 0.6rem;
+}
+
+.sociais-icon i:hover {
+  font-size: 1.9rem;
+}
+
+.section-top {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  animation: sectionimg 15s infinite;
+}
+
+@keyframes sectionimg {
+  0% {
+    background-image: url(Assets/img-section/imagem-4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  50% {
+    background-image: url(Assets/img-section/imagem-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  100% {
+    background-image: url(Assets/img-section/imagem-5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.section-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-container .text {
+  text-align: center;
+}
+
+.section-container .text h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.section-container .text p {
+  color: #f7cda5;
+  margin-bottom: 1.5rem;
+}
+
+.section-container .text .btn-1 {
+  display: inline-block;
+  background: #f7cda5;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.3rem;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 1.7rem;
+}
+
+.section-container .text .btn-1:hover {
+  color: #000;
+  letter-spacing: 0.05rem;
+}
+
+.about {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.about h2 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2.5rem;
+  font-size: 2rem;
+}
+
+.about span {
+  color: #f7cda5;
+}
+
+.container-about .row {
+  display: flex;
+  padding: 4rem 8rem;
+  justify-content: space-between;
+}
+
+.container-about .row .img img {
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.container-about .row .text {
+  display: block;
+  text-align: center;
+  width: 400px;
+  height: 400px;
+}
+
+.container-about .row .text h3 {
+  padding: 3rem;
+  font-size: 20px;
+}
+
+.container-about .row .text p {
+  padding: 2rem;
+  font-size: 15px;
+}
+
+.container-about .row .text .btn-1 {
+  display: inline-block;
+  background: #f7cda5;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 1.7rem;
+}
+
+.container-about .row .text .btn-1:hover {
+  color: #000;
+  letter-spacing: 0.05rem;
+}
+
+/* PRODUCTION */
+
+.Production .container-production {
+  width: 100%;
+  padding: 2.5rem;
+}
+
+.Production h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 2.5rem;
+  text-transform: uppercase;
+}
+
+.Production span {
+  color: #f7cda5;
+}
+
+.container-production .row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-production .row .card img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+/* COFFEE */
+
+.Coffee .container-coffee {
+  width: 100%;
+}
+
+.Coffee h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 2.5rem;
+  text-transform: uppercase;
+}
+
+.Coffee span {
+  color: #f7cda5;
+}
+
+.container-coffee .row {
+  display: flex;
+  justify-content: space-around;
+  padding: 35px 0;
+}
+
+.container-coffee .row .card img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.container-coffee .row .text {
+  display: flex;
+  align-items: center;
+  width: 300px;
+}
+
+.container-coffee .row .text p {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+/* LOCATION */
+
+.location .container-location {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2.5rem;
+}
+
+.location h2 {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 2.5rem;
+}
+
+.container-location {
+  display: flex;
+  justify-content: center;
+}
+
+/* FOOTER-CONTACT */
+
+.footer-contact {
+  width: 100%;
+  min-height: 80vh;
+  
+}
+
+
+
+.footer-contact h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 2.5rem;
+
+}
+
+.footer-contact span {
+  color: #f7cda5;
+}
+
+.container-contact {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.container-contact .ul-false {
+  line-height: 35px;
+}
+
+.container-contact .img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.container-contact .form-contact {
+  width: 250px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(50px);
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.container-contact .form-contact input {
+  width: 100%;
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: 1px solid #a3a1a1;
+}
+.container-contact .form-contact textarea {
+  width: 100%;
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: 1px solid #a3a1a1;
+  resize: none;
+  height: 80px;
+}
+
+.container-contact .form-contact .btn-1 {
+  display: block;
+  background: #f7cda5;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.1rem;
+  cursor: pointer;
+}
+
+.container-contact .form-contact .btn-1:hover {
+  color: #000;
+  letter-spacing: 0.05rem;
+}
+
+.footer-contact .sociais-icon {
+  text-align: center;
+  padding: 20px 0;
+
+}
+
+.footer-footer {
+  background: #a3a1a1;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.footer-footer:hover {
+  background: #000;
+  color: #fff;
+  transition: 0.3s  ease all;
+}
+
+
+
+
+
